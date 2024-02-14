@@ -1,0 +1,61 @@
+/* --------------------------------------------------------------------- */
+/* signin */
+
+/* .signin-container {
+    border: 1px solid black;
+    height: 50vh;
+} */
+
+.signin-container {
+    /* border: 1px solid blue; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    
+}
+
+.signin-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.signin-container input, textarea {
+
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;   
+  border-color: white;
+  border: none;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.signin-container button {
+
+        background-color: #007bff;
+        width: 50%;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    
+      
+}
+
+
+.signin-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .signin-header a {
+    text-decoration: none;
+    
+  }
+
+  #forgotpassword {
+    text-decoration: none;
+  }

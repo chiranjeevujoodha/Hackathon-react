@@ -15,6 +15,10 @@ function CustomNavbar() {
             <Nav.Link href="/campaigns">Campaigns</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
+          <Nav className='justify-content-end'>
+            <Nav.Link href="/signin">Sign-In</Nav.Link>
+            <Nav.Link href="/signup">Sign-Up</Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
