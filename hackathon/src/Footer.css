@@ -1,0 +1,42 @@
+.sub-footer {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    /* height: 50vh; */
+}
+
+.sub-footer .container {
+    /* border: 1px solid black; */
+    height: 100%;
+}
+
+.sub-footer .footer-box {
+    /* border: 1px solid black; */
+    height: 100%;
+}
+
+.footer-box button {
+    width: 50%;
+}
+
+.footer-box button a {
+    color: white;
+    text-decoration: none;
+}
+
+.sitemap a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    height: 4vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0;
+}
