@@ -2,14 +2,14 @@ import React from 'react'
 
 const Signin = () => {
   return (
-    <div className=" container mt-5 col-lg-4">
+    <div className=" container container-main mt-5 col-lg-4">
         <div className="signin-container">
             <form action="" method="post">
             
             <div className="signin-header text-center">
                 <h1>Sign in</h1>
                 <p>
-                Don't have an account? <a href="{% url 'signup' %}">Sign up</a>
+                Don't have an account? <a href="/signup">Sign up</a>
                 </p>
             </div>
             <hr />

@@ -33,24 +33,19 @@ const Footer = () => {
         <div className="footer-signin pb-2">
           <h5>Already a member?</h5>
           <button className="btn btn-primary">
-            <a href="{% url 'signin' %}">Sign-in</a>
+            <a href="/signin">Sign-in</a>
           </button>
         </div>
         <div className="footer-signup pb-2">
           <h5>Become a member!</h5>
           <button className="btn btn-primary">
-            <a href="{% url 'signup' %}">Sign-up</a>
+            <a href="/signup">Sign-up</a>
           </button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="footer">
-
-    <p> &copy; Chiranjeev Ujoodha 2023</p>
-
-  </div>
 
 </div>
 

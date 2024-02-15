@@ -28,15 +28,3 @@
     color: black;
 }
 
-.footer {
-    height: 4vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer p {
-    margin: 0;
-}

@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
 
 
 function CustomNavbar() {
@@ -17,7 +18,7 @@ function CustomNavbar() {
           </Nav>
           <Nav className='justify-content-end'>
             <Nav.Link href="/signin">Sign-In</Nav.Link>
-            <Nav.Link href="/signup">Sign-Up</Nav.Link>
+            <Button href="/signup">Sign-Up</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

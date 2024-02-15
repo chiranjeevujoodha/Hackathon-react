@@ -9,8 +9,10 @@ import './Home.css'
 import './Footer.css'
 import './Contact.css'
 import './Signin.css'
+import './Copyright.css'
 import Signin from './Signin';
 import Signup from './Signup';
+import Copyright from './Copyright';
 
 
 function App() {
@@ -25,8 +27,8 @@ function App() {
           <Route path='/signin' element={<Signin />} />
           <Route path='/signup' element={<Signup />} />
         </Routes>
-        <Footer />
       </div>
+      <Copyright />
     </Router>
   );
 }

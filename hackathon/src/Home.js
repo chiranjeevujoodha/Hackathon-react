@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -32,7 +33,7 @@ const Home = () => {
             Together, we strive to build a better world—one campaign at a time.</h3>
         </div>
       </div>
-
+      <Footer />
     </div>
     
 
