@@ -10,6 +10,7 @@ import './Footer.css'
 import './Contact.css'
 import './Signin.css'
 import './Copyright.css'
+import './Campaigns.css'
 import Signin from './Signin';
 import Signup from './Signup';
 import Copyright from './Copyright';
