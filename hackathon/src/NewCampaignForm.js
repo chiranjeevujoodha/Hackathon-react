@@ -12,10 +12,15 @@ const NewCampaignForm = () => {
 
     const handleChange = (e) => {setFormData({...formData, [e.target.name]: e.target.value})}
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formData)
-    }
+        try {
+            const response = await axios.post('http://localhost:8000/api/campaigns/', formData);
+            console.log(response.data);
+        } catch (error) {
+            console.error(error);
+        }
+    };
 
   return (
     <div>

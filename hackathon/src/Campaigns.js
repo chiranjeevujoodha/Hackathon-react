@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import NewCampaignForm from './NewCampaignForm'
+import axios from 'axios';
 
-const Campaigns = () => {
+
+function CampaignsList() {
+
+  const [campaigns, setCampaigns] = useState([]);
+
+  useEffect(() => {
+    async function fetchCampaigns() {
+        try {
+            const response = await axios.get('http://localhost:8000/api/campaigns/all');
+            setCampaigns(response.data);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    fetchCampaigns();
+}, []);
+
+
   return (
     <div className='campaigns-page'>
       <div className="header d-flex justify-content-center align-items-center">
@@ -10,26 +28,28 @@ const Campaigns = () => {
 
       <div className="camp-container">
         <div className="campaigns-box">
-          <div className="campaigns item-1">
+
+          {campaigns.map(campaign => (
+            <div className="campaigns item-1" key={campaign.id}>
             <div className="campaign-title">
               <h2>
-                Blood Donation
+                {campaign.name}
               </h2>
             </div>
             <div className="details row">
               <div className="campaign-details col-12 col-lg-4">
                 <h5>
-                  Organisor: 
+                  Organisor: {campaign.organisor}
                 </h5>
                 <h5>
-                  Location: 
+                  Location: {campaign.location}
                 </h5>
-                <h5>Date: 23 December 2023</h5>
+                <h5>Date: {campaign.date}</h5>
               </div>
               <div className="campaign-description col-12 col-lg-4">
                 <h5>Description:</h5>
                 <p>
-                  test
+                  {campaign.description}
                 </p>
               </div>
               <div className="campaign-btns col-12 col-lg-4">
@@ -45,7 +65,10 @@ const Campaigns = () => {
                 </button>
               </div>
             </div>
-          </div>
+        </div>
+          ) )}
+
+
         </div>
       </div>
 
@@ -55,4 +78,4 @@ const Campaigns = () => {
   )
 }
 
-export default Campaigns
+export default CampaignsList
