@@ -33,7 +33,12 @@ const ContactPage = () => {
 
   return (
     <div>
-    {formSubmitted ? (<ContactSuccess />) : (<Contact contactData={contactData} handleChange={handleChange} handleSubmit={handleSubmit} />) }
+    {formSubmitted ? (
+      <div>
+    <ContactSuccess />
+    <Contact contactData={contactData} handleChange={handleChange} handleSubmit={handleSubmit} />
+    </div>
+    ) : (<Contact contactData={contactData} handleChange={handleChange} handleSubmit={handleSubmit} />) }
     </div>
   )
 }
